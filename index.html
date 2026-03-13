@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explora Buga</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<!-- PANTALLA DE BIENVENIDA -->
+
+<section id="bienvenida">
+
+
+<div class="overlay">
+
+<h1>Explora Buga</h1>
+<p>Descubre los mejores lugares de la ciudad</p>
+
+<button onclick="entrarApp()">Explorar</button>
+
+</div>
+
+</section>
+
+
+<!-- APP -->
+
+<section id="app">
+
+<header>
+
+<button class="btn-regresar" onclick="volverInicio()">Regresar</button>
+
+Explora Buga
+
+</header>
+
+
+<!-- BUSCADOR -->
+
+<div class="buscador">
+
+<input type="text" id="buscarLugar" placeholder="Buscar lugares...">
+
+</div>
+
+
+<!-- CATEGORIAS -->
+
+<div class="categorias">
+
+<div class="categoria" onclick="filtrar('todos')">🌎<p>Todos</p></div>
+
+<div class="categoria" onclick="filtrar('parque')">🌳<p>Parques</p></div>
+
+<div class="categoria" onclick="filtrar('restaurante')">🍽<p>Restaurantes</p></div>
+
+<div class="categoria" onclick="filtrar('cafe')">☕<p>Cafés</p></div>
+
+<div class="categoria" onclick="filtrar('reserva')">🌿<p>Reservas</p></div>
+
+<div class="categoria" onclick="filtrar('cascada')">💧<p>Cascadas</p></div>
+
+</div>
+
+
+<!-- DESTINOS -->
+
+<div class="lugares">
+
+
+<!-- BASILICA -->
+
+<div class="tarjeta parque">
+
+<img src="img/basilica.jpg.png">
+
+<div class="info">
+
+<h3>Basílica del Señor</h3>
+
+<p>Centro histórico de Buga</p>
+
+<button onclick="verActividades('basilica')">Qué hacer</button>
+
+<button onclick="irLugar(3.9007,-76.2970)">Cómo llegar</button>
+
+</div>
+
+</div>
+
+
+<!-- PARQUE -->
+
+<div class="tarjeta parque">
+
+<img src="img/parque.jpg.png">
+
+<div class="info">
+
+<h3>Parque Cabal</h3>
+
+<p>Plaza principal de la ciudad</p>
+
+<button onclick="verActividades('parque')">Qué hacer</button>
+
+<button onclick="irLugar(3.8986,-76.3020)">Cómo llegar</button>
+
+</div>
+
+</div>
+
+
+<!-- CASCADA -->
+
+<div class="tarjeta cascada">
+
+<img src="img/cascada.jpg.png">
+
+<div class="info">
+
+<h3>Cascada del Milagroso</h3>
+
+<p>Ubicada a 5 km de Buga</p>
+
+<button onclick="verActividades('cascada')">Qué hacer</button>
+
+<button onclick="irLugar(3.887,-76.33)">Cómo llegar</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
