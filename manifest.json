@@ -8,12 +8,12 @@
 "description": "Guía turística de Guadalajara de Buga",
 "icons": [
 {
-"src": "img/icono-192.png.png",
+"src": "img/icon-192.png.png",
 "sizes": "192x192",
 "type": "image/png"
 },
 {
-"src": "img/icono-512.png.png",
+"src": "img/icon-512.png.png",
 "sizes": "512x512",
 "type": "image/png"
 }
